@@ -1,0 +1,16 @@
+{
+  "name": "apollo-datasource-redis",
+  "version": "1.0.0",
+  "description": "Apollo data source for redis",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": "https://github.com/phloxcorp/apollo-datasource-redis.git",
+  "author": "Sukwon Yi <sukwon.yi@phloxcorp.io>",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-datasource": "^0.6.3"
+  },
+  "devDependencies": {
+    "@types/redis": "^2.8.14"
+  }
+}
