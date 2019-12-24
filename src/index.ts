@@ -1,5 +1,5 @@
 import { DataSource } from 'apollo-datasource'
-import { RedisClient, ClientOpts, createClient } from 'redis'
+import { RedisClient } from 'redis'
 
 function callback<T>(resolve: (value?: T) => void, reject: (reason?: any) => void) {
   return (err: Error | null, reply: T) => {
@@ -14,9 +14,9 @@ function callback<T>(resolve: (value?: T) => void, reject: (reason?: any) => voi
 export class RedisDataSource<TContext = any> extends DataSource<TContext> {
   private client: RedisClient
 
-  public constructor(options?: ClientOpts) {
+  public constructor(client: RedisClient) {
     super()
-    this.client = createClient(options)
+    this.client = client
   }
   
   public get(key: string) {
