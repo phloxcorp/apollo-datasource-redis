@@ -1,6 +1,6 @@
 {
   "name": "apollo-datasource-redis",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Apollo data source for redis",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
